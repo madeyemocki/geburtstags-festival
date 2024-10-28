@@ -1,107 +1,86 @@
 <script>
+  import "../lib/styles.css";
 </script>
 
 <main>
   <header>
     <h1>Geburtstagsfestival</h1>
+    <h3>8.Nov. - 11.Nov.</h3>
   </header>
+  <div class="content">
+    <div class="infos">
+      <span>Hannes - 10.11 </span> <span>Herrenhaus bei Lübbenow</span><span
+        >Lene - 11.11</span
+      >
+    </div>
+    <div class="introduction">
+      Es war einmal ein geheimnisvolles Herrenhaus, versteckt in den endlosen
+      Weiten von Lübbenow, das nur darauf wartete, zum Schauplatz eines
+      märchenhaften Festes zu werden. Anlässlich des Ehrentages unserer
+      geliebten Geburtstagskinder Lene und Hannes versammeln sich Freunde von
+      nah und fern, um ein Wochenende voller Glitzer, Lachen und Magie zu
+      erleben. Dort, inmitten von Sauna, Pool und weiten Hallen, haben wir Platz
+      für all unsere wilden Träume und Geschichten. Packt eure funkelnden
+      Festivalgewänder, eure mutigsten Tanzschritte und die schönsten Anekdoten
+      über die beiden ein – denn hier feiern wir ein Fest, das selbst den
+      Sternen noch lange in Erinnerung bleiben wird!
+    </div>
 
-  <div class="menucontent">
-    <div class="menupoint">
-      <h2>Infos</h2>
-      <p>Geburtstag Hannes: 10.11</p>
-      <p>Geburtstag Lene: 11.11</p>
-
-      <p>Einlass: 8.10 18 Uhr</p>
-    </div>
-    <div class="menupoint">
-      <h2>Programm</h2>
-      <p>Das Programm wird in Kürze bekannt gegeben.</p>
-      <h3>Freitag, 8.11</h3>
-      <h3>Samstag, 9.11</h3>
-      <h3>Sonntag, 10.11</h3>
-      <h3>Montag, 11.11</h3>
-      <p>Fahrt nach hause und kommt mal klar ey</p>
-    </div>
-    <div class="menupoint">
-      <h2>Location</h2>
-      <p>Adresse</p>
-    </div>
-    <div class="menupoint">
-      <h2>Magic Hour</h2>
-      <p>hmm simsalabim</p>
+    <div class="menucontent">
+      <div class="menupoint">
+        <h2>Dreikampf</h2>
+        <p>Das Programm wird in Kürze bekannt gegeben.</p>
+        <h3>Freitag, 8.11</h3>
+        <h3>Samstag, 9.11</h3>
+        <h3>Sonntag, 10.11</h3>
+        <h3>Montag, 11.11</h3>
+        <p>Fahrt nach hause und kommt mal klar ey</p>
+      </div>
+      <div class="menupoint">
+        <h2>LineUp</h2>
+        <p>Adresse</p>
+      </div>
+      <div class="menupoint">
+        <h2>Location</h2>
+        <p>Adresse</p>
+      </div>
+      <div class="menupoint">
+        <h2>Magic Hour</h2>
+        <p>hmm simsalabim</p>
+      </div>
+      <div class="menupoint">
+        <h2>Magic Hour</h2>
+        <p>hmm simsalabim</p>
+      </div>
     </div>
   </div>
 </main>
 
 <style>
-  :global(body) {
-    color: white;
-    background-color: #342434;
-    background: linear-gradient(180deg, #342434 40%, #541e54 100%);
-    word-wrap: break-word;
-  }
-
-  * {
-    margin: 0;
-    padding: 0;
-  }
   header {
-    /* The image used */
-    background-image: url("../assets/castle.webp");
-
-    /* Full height */
-    /* Create the parallax scrolling effect */
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-    height: 100vw;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
-  }
-
-  :global(h1) {
-    color: white;
-    font-size: 25px;
     text-shadow: 7px 5px 15px #000000;
-    font-family: SundayFont;
-    margin: 0 auto;
+    background-color: black;
   }
 
-  .container {
+  h3 {
+    margin-top: 10px;
+    font-size: 16px;
+    font-family: SundayFont;
+  }
+
+  .infos {
     display: flex;
-    justify-content: space-around;
-    margin-top: 20px;
+    justify-content: space-between;
+    color: #9948b2;
+    font-size: 13px;
+    text-align: center;
+    margin-bottom: 20px;
   }
 
-  h2 {
-    font-size: 20px;
-    padding-bottom: 7px;
-    margin: 0 auto;
-    color: #fab45c;
-    font-family: SundayFont;
-  }
-
-  main {
-    height: 100%;
-    width: 100%;
-  }
-
-  .menucontent {
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-    padding: 20px;
-  }
-  .menupoint {
-    border-bottom: 1px solid #9948b2;
-    padding-bottom: 20px;
-  }
-
-  @font-face {
-    font-family: SundayFont;
-    src: url(../assets/OTF/Sunday-Regular.otf);
+  .introduction {
+    font-size: 12px;
+    opacity: 0.7;
+    text-align: center;
+    margin: 0 20px 30px;
   }
 </style>
