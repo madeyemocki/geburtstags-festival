@@ -1,79 +1,80 @@
 <script>
   import "../lib/styles.css";
-  import Header from "./Header.svelte";
+  import Content from "./Content.svelte";
 </script>
 
 <main>
-  <Header></Header>
-
-  <div class="content">
-    <div class="introduction">
-      Es war einmal ein geheimnisvolles Herrenhaus, versteckt in den endlosen
-      Weiten von Lübbenow, das nur darauf wartete, zum Schauplatz eines
-      märchenhaften Festes zu werden. Anlässlich des Ehrentages unserer
-      geliebten Geburtstagskinder Lene und Hannes versammeln sich Freunde von
-      nah und fern, um ein Wochenende voller Glitzer, Lachen und Magie zu
-      erleben. Dort, inmitten von Sauna, Pool und weiten Hallen, haben wir Platz
-      für all unsere wilden Träume und Geschichten. Packt eure funkelnden
-      Festivalgewänder, eure mutigsten Tanzschritte und die schönsten Anekdoten
-      über die beiden ein – denn hier feiern wir ein Fest, das selbst den
-      Sternen noch lange in Erinnerung bleiben wird!
-    </div>
-
-    <div class="menucontent">
-      <div class="menupoint">
-        <h2>Dreikampf</h2>
-        <p>Das Programm wird in Kürze bekannt gegeben.</p>
-        <h3>Freitag, 8.11</h3>
-        <h3>Samstag, 9.11</h3>
-        <h3>Sonntag, 10.11</h3>
-        <h3>Montag, 11.11</h3>
-        <p>Fahrt nach hause und kommt mal klar ey</p>
-      </div>
-      <div class="menupoint">
-        <h2>LineUp</h2>
-        <p>Adresse</p>
-      </div>
-      <div class="menupoint">
-        <h2>Location</h2>
-        <p>Adresse</p>
-      </div>
-      <div class="menupoint">
-        <h2>Magic Hour</h2>
-        <p>hmm simsalabim</p>
-      </div>
-      <div class="menupoint">
-        <h2>Magic Hour</h2>
-        <p>hmm simsalabim</p>
+  <div class="wrapper">
+    <div class="wrapper-parallax">
+      <div class="background"></div>
+      <img
+        src="https://i.postimg.cc/rzx8fKyY/pngfind-com-bike-smoke-png-1458660.png"
+        class="foreground"
+      />
+      <div class="title">
+        <h1>Geburtstagsfestival</h1>
+        <h1>8.11 - 11.11</h1>
       </div>
     </div>
+    <Content></Content>
   </div>
 </main>
 
 <style>
-  header {
-    text-shadow: 7px 5px 15px #000000;
+  .wrapper {
+    height: 100vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    perspective: 10px;
   }
 
-  h3 {
-    margin-top: 10px;
-    font-size: 16px;
-    font-family: SundayFont;
+  .wrapper-parallax {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    transform-style: preserve-3d;
+    z-index: -1;
+  }
+
+  .background {
+    transform: translateZ(-10px) scale(3);
+    opacity: 0.8;
+    background-image: url("../assets/castle.webp");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .foreground {
+    transform: translateZ(-5px) scale(2.045);
+  }
+  .background,
+  .foreground {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    z-index: -1;
+  }
+
+  .title {
+    display: flex;
+    flex-direction: column;
+    color: #fcf1d9;
+    gap: 20px;
   }
 
   .infos {
-    display: flex;
-    justify-content: space-between;
-    color: #9948b2;
-    font-size: 13px;
-    text-align: center;
-    margin-bottom: 20px;
-  }
-
-  .introduction {
-    font-size: 12px;
-    opacity: 0.7;
-    text-align: center;
-    margin: 0 20px 30px;
+    font-size: 1.2rem;
+    padding: 2rem;
+    background-color: #333;
+    color: #fcf1d9;
   }
 </style>
