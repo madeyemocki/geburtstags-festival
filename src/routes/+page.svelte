@@ -53,7 +53,7 @@
   }
 
   .foreground {
-    transform: translateZ(-5px) scale(2.045);
+    transform: translateZ(-10px) scale(2.045);
   }
   .background,
   .foreground {
@@ -69,5 +69,6 @@
     flex-direction: column;
     color: #fcf1d9;
     gap: 20px;
+    margin-top: -60px;
   }
 </style>
