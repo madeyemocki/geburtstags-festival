@@ -70,11 +70,4 @@
     color: #fcf1d9;
     gap: 20px;
   }
-
-  .infos {
-    font-size: 1.2rem;
-    padding: 2rem;
-    background-color: #333;
-    color: #fcf1d9;
-  }
 </style>

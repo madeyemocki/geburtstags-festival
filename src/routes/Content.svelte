@@ -96,9 +96,16 @@
     font-size: 10px;
     text-align: center;
     padding: 20px 10px;
+    font-family: SundayFont;
+
     > * {
       color: #fcf1d9;
     }
+  }
+
+  strong {
+    margin-top: -4px;
+    color: #fcf1d9;
   }
 
   .content {
