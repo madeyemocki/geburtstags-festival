@@ -19,7 +19,9 @@
     denn hier feiern wir ein Fest, das selbst den Sternen noch lange in
     Erinnerung bleiben wird!
   </div>
+
   <div class="menucontent">
+    <span class="divider"></span>
     <div class="menupoint">
       <h2>Tribute von Lübbenow</h2>
       <h3>Freitag, 8.11</h3>
@@ -34,7 +36,7 @@
       <p class="competition"><strong>18:30 Uhr:</strong> Quizshow</p>
       <p class="competition"><strong>19:00 Uhr:</strong> Siegerehrung</p>
     </div>
-    <hr />
+    <span class="divider"></span>
     <div class="menupoint">
       <h2>Line Up</h2>
       <h3>Freitag, 8.11</h3>
@@ -49,7 +51,7 @@
       <p><strong>Lene Geburtstag</strong></p>
       <p><strong>10:00 Uhr:</strong> Bitte fahrt nach hause und kommt klar</p>
     </div>
-    <hr />
+    <span class="divider"></span>
     <div class="menupoint">
       <h2>Magic Hour</h2>
       <p>
@@ -58,7 +60,7 @@
         >
       </p>
     </div>
-    <hr />
+    <span class="divider"></span>
     <div class="menupoint">
       <h2>Location</h2>
       <p>
@@ -73,10 +75,11 @@
 </div>
 
 <style>
-  hr {
+  .divider {
     display: flex;
     width: 30%;
-    background-color: #fcf1d9;
+    background-color: #382236;
+    height: 1px;
     align-self: center;
   }
   header {
