@@ -1,18 +1,12 @@
 <script>
   import "../lib/styles.css";
+  import Header from "./Header.svelte";
 </script>
 
 <main>
-  <header>
-    <h1>Geburtstagsfestival</h1>
-    <h3>8.Nov. - 11.Nov.</h3>
-  </header>
+  <Header></Header>
+
   <div class="content">
-    <div class="infos">
-      <span>Hannes - 10.11 </span> <span>Herrenhaus bei Lübbenow</span><span
-        >Lene - 11.11</span
-      >
-    </div>
     <div class="introduction">
       Es war einmal ein geheimnisvolles Herrenhaus, versteckt in den endlosen
       Weiten von Lübbenow, das nur darauf wartete, zum Schauplatz eines
@@ -59,7 +53,6 @@
 <style>
   header {
     text-shadow: 7px 5px 15px #000000;
-    background-color: black;
   }
 
   h3 {

@@ -28,20 +28,6 @@ body{
     color: #fab45c;
     font-family: SundayFont;
   }
-  header {
-    /* The image used */
-    background-image: url("../assets/castle.webp");
-    /* Full height */
-    /* Create the parallax scrolling effect */
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-    height: 100vw;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
-  }
 
   .menucontent {
     display: flex;
@@ -49,7 +35,7 @@ body{
     gap: 30px;
   }
   .menupoint {
-	text-align: center;
+	text-align: ce;
     border-bottom: 1px solid #9948b2;
     padding-bottom: 20px;
   }
