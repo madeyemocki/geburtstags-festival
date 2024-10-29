@@ -95,7 +95,7 @@
     justify-content: space-between;
     font-size: 10px;
     text-align: center;
-    padding: 20px 10px;
+    padding: 30px 10px;
     font-family: SundayFont;
 
     > * {
@@ -109,7 +109,7 @@
   }
 
   .content {
-    background: linear-gradient(180deg, #32213a 0%, #812658 80%);
+    background: linear-gradient(180deg, #32213a 0%, #812658 100%);
   }
 
   .introduction {
@@ -127,7 +127,7 @@
     gap: 50px;
     text-align: center;
     padding-top: 30px;
-    padding-bottom: 50px;
+    padding-bottom: 100px;
   }
 
   .menupoint {
