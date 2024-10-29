@@ -19,16 +19,14 @@
     denn hier feiern wir ein Fest, das selbst den Sternen noch lange in
     Erinnerung bleiben wird!
   </div>
-
   <div class="menucontent">
     <div class="menupoint">
       <h2>Tribute von Lübbenow</h2>
-      <p>Das Programm wird in Kürze bekannt gegeben.</p>
       <h3>Freitag, 8.11</h3>
       <p class="competition">
         <strong>21:30 Uhr:</strong> Geschichten aus der Kindheit
       </p>
-      <p class="competition"><strong>22:0 Uhr:</strong> What is it?</p>
+      <p class="competition"><strong>22:00 Uhr:</strong> What is it?</p>
       <h3>Samstag, 9.11</h3>
       <p class="competition"><strong>13:00 Uhr:</strong> Staffelsaufen</p>
       <p class="competition"><strong>14:00 Uhr:</strong> Pfeffi Pirsch</p>
@@ -36,20 +34,22 @@
       <p class="competition"><strong>18:30 Uhr:</strong> Quizshow</p>
       <p class="competition"><strong>19:00 Uhr:</strong> Siegerehrung</p>
     </div>
+    <hr />
     <div class="menupoint">
       <h2>Line Up</h2>
       <h3>Freitag, 8.11</h3>
       <p><strong>Ab 16 Uhr:</strong> Einlass</p>
       <h3>Samstag, 9.11</h3>
-      <p class="party" href="#party"><strong>20:00 Uhr:</strong>DJ Paquet</p>
-      <p class="party" href="#party"><strong>22:00 Uhr:</strong>DJ Tomasch</p>
+      <p class="party" href="#party"><strong>20:00 Uhr:</strong> DJ Paquet</p>
+      <p class="party" href="#party"><strong>22:00 Uhr:</strong> DJ Tomasch</p>
       <h3>Sonntag, 10.11</h3>
       <p><strong>Hannes Geburtstag</strong></p>
-      <p class="party" href="#party"><strong>02:00 Uhr:</strong>DJ Heggi</p>
+      <p class="party" href="#party"><strong>02:00 Uhr:</strong> DJ Heggi</p>
       <h3>Montag, 11.11</h3>
       <p><strong>Lene Geburtstag</strong></p>
-      <p><strong>10:00 Uhr:</strong>Bitte fahrt nach hause und kommt klar</p>
+      <p><strong>10:00 Uhr:</strong> Bitte fahrt nach hause und kommt klar</p>
     </div>
+    <hr />
     <div class="menupoint">
       <h2>Magic Hour</h2>
       <p>
@@ -58,6 +58,7 @@
         >
       </p>
     </div>
+    <hr />
     <div class="menupoint">
       <h2>Location</h2>
       <p>
@@ -72,6 +73,12 @@
 </div>
 
 <style>
+  hr {
+    display: flex;
+    width: 30%;
+    background-color: #fcf1d9;
+    align-self: center;
+  }
   header {
     text-shadow: 7px 5px 15px #000000;
   }
@@ -86,7 +93,7 @@
     display: flex;
     text-transform: uppercase;
     justify-content: space-between;
-    font-size: 13px;
+    font-size: 10px;
     text-align: center;
     padding: 20px 10px;
     > * {
@@ -110,14 +117,18 @@
   .menucontent {
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: 50px;
     text-align: center;
     padding-top: 30px;
+    padding-bottom: 50px;
   }
 
   .menupoint {
-    border-bottom: 1px solid #9948b2;
-    padding-bottom: 30px;
     margin: 0 20px;
+    text-align: left;
+  }
+
+  .menupoint p {
+    margin-bottom: 15px;
   }
 </style>
