@@ -23,10 +23,15 @@
         delay={[500, 2000]}
         infinite
         duration="8000"
-        amount="300"
+        amount="400"
         fallDistance="100vh"
         size="50"
-        colorArray={["url(./images/hannes.png)", "url(./images/lene.png)"]}
+        colorArray={[
+          "url(./images/hannes.png)",
+          "url(./images/lene.png)",
+          "url(./images/lene_eichhorn.png)",
+          "url(./images/hanne_schild.png)",
+        ]}
       />
     </div>
   </ToggleConfetti>
@@ -83,6 +88,7 @@
       <h3>Sonntag, 10.11</h3>
       <p><strong>Hannes Geburtstag</strong></p>
       <p class="party" href="#party"><strong>02:00 Uhr:</strong> DJ Heggi</p>
+      <p class="party" href="#party"><strong>00:00 Uhr:</strong> DJ AHAB</p>
       <h3>Montag, 11.11</h3>
       <p><strong>Lene Geburtstag</strong></p>
       <p><strong>10:00 Uhr:</strong> Bitte fahrt nach hause und kommt klar</p>
