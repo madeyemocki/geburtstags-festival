@@ -1,3 +1,8 @@
+<script>
+  import { Confetti } from "svelte-confetti";
+  import ToggleConfetti from "./ToggleConfetti.svelte";
+</script>
+
 <div class="content">
   <div class="infos">
     <span>Hannes - 10.11 </span>
@@ -6,6 +11,25 @@
       target="_blank">Herrenhaus bei Lübbenow</a
     ><span>Lene - 11.11</span>
   </div>
+
+  <ToggleConfetti>
+    <button class="button" slot="label">Drück mich</button>
+    <div
+      style="top: -50px; left: 0; height: 100vh; width: 110vw; justify-content: center;"
+    >
+      <Confetti
+        x={[-5, 5]}
+        y={[0.5, 0.5]}
+        delay={[500, 2000]}
+        infinite
+        duration="8000"
+        amount="300"
+        fallDistance="100vh"
+        size="50"
+        colorArray={["url(./images/hannes.png)", "url(./images/lene.png)"]}
+      />
+    </div>
+  </ToggleConfetti>
 
   <div class="introduction">
     Es war einmal ein geheimnisvolles Herrenhaus, versteckt in den endlosen
@@ -19,11 +43,23 @@
     denn hier feiern wir ein Fest, das selbst den Sternen noch lange in
     Erinnerung bleiben wird!
   </div>
-
   <div class="menucontent">
     <span class="divider"></span>
     <div class="menupoint">
       <h2>Tribute von Lübbenow</h2>
+      <div class="eventdescription">
+        Über den weiten Hallen von Lübbenow erhebt sich ein Fest voller Magie
+        und Tradition, bereit, das wildeste Turnier des Jahres zu beherbergen.
+        Teams aus nah und fern treten in außergewöhnlichen Disziplinen an, um
+        für Lene und Hannes um den Sieg zu kämpfen. Ob beim Staffelsaufen, wo
+        Ausdauer und Teamgeist gefragt sind, in der verrückten Quizshow, die
+        Wissen und Schnelligkeit fordert, oder bei der legendären Reise ins
+        Delirium.
+        <br />
+        Also, schnappt euch eure funkelnden Gewänder, bringt euren Kampfgeist mit
+        und bereitet euch darauf vor, Seite an Seite zu triumphieren und zu feiern.
+        Ein Spektakel für die Ewigkeit.
+      </div>
       <h3>Freitag, 8.11</h3>
       <p class="competition">
         <strong>21:30 Uhr:</strong> Geschichten aus der Kindheit
@@ -55,8 +91,10 @@
     <div class="menupoint">
       <h2>Magic Hour</h2>
       <p>
-        <a href="https://photos.app.goo.gl/q9oTrQJNLcgsKnEm8" target="_blank"
-          >hmm simsalabim</a
+        <a
+          class="button"
+          href="https://photos.app.goo.gl/q9oTrQJNLcgsKnEm8"
+          target="_blank">hmm simsalabim</a
         >
       </p>
     </div>
@@ -75,6 +113,26 @@
 </div>
 
 <style>
+  .eventdescription {
+    line-height: 1.5;
+    font-size: 12px;
+    opacity: 0.7;
+    text-transform: uppercase;
+    color: white;
+  }
+  .button {
+    background-color: #c43e88;
+    color: #fcf1d9;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-family: SundayFont;
+    cursor: pointer;
+    margin: 0 auto;
+    z-index: 1;
+    margin-bottom: 50px;
+  }
   .divider {
     display: flex;
     width: 30%;
@@ -117,6 +175,7 @@
 
   .introduction {
     font-size: 14px;
+    line-height: 1.5;
     opacity: 0.7;
     text-transform: uppercase;
     text-align: center;
