@@ -106,7 +106,10 @@
             <p class="riddle-text">
               Richtig! Hier als Preis in Bild von Hannes
             </p>
-            <img src="images/hannes.png" alt="Bierbaum" />
+            <video width="320" height="240" controls>
+              <source src="images/hannesvideo.MP4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
           </div>
         </div>
       {/if}
