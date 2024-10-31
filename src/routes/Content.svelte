@@ -104,7 +104,7 @@
         <div class="modal">
           <div class="modal-content">
             <p class="riddle-text">
-              Richtig! Hier als Preis in Bild von Hannes
+              Herzlichen Glückwunsch! Du hast das Rätsel gelöst.
             </p>
             <video width="320" height="240" controls>
               <source src="images/hannesvideo.MP4" type="video/mp4" />
