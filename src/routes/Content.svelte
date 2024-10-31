@@ -12,10 +12,6 @@
       alert("Incorrect. Try again.");
     }
   }
-
-  function closeModal() {
-    showModal = false;
-  }
 </script>
 
 <div class="content">
@@ -96,8 +92,9 @@
     <div class="menupoint">
       <h2>Rätsel</h2>
       <h3 class="riddle">
-        Ich bin nie dicht, doch alle in mir sind es ständig.<br />Was bin ich?
+        Ich bin nie dicht, doch alle in mir sind es ständig.
       </h3>
+      <p class="riddle-text">Was bin ich?</p>
       <form on:submit={handleSubmit}>
         <input type="text" id="riddle-input" placeholder="Deine Antwort" />
         <button class="button" type="submit">ich hab's</button>
@@ -106,8 +103,9 @@
       {#if showModal}
         <div class="modal">
           <div class="modal-content">
-            <span class="close" on:click={closeModal}>&times;</span>
-            <p>Richtig! Hier als Preis in Bild von Hannes</p>
+            <p class="riddle-text">
+              Richtig! Hier als Preis in Bild von Hannes
+            </p>
             <img src="images/hannes.png" alt="Bierbaum" />
           </div>
         </div>
@@ -156,20 +154,27 @@
 </div>
 
 <style>
+  .riddle-text {
+    font-family: Arial, Helvetica, sans-serif;
+  }
   input {
     padding: 15px;
     border-radius: 5px;
     border: none;
     margin: 20px 0;
     width: 90%;
+    font-size: 16px;
   }
   .riddle {
     color: white;
     line-height: 1.5;
   }
+  .riddle h3 {
+    margin-bottom: 20px;
+  }
   .eventdescription {
     line-height: 1.5;
-    font-size: 12px;
+    font-size: 14px;
     opacity: 0.7;
     text-transform: uppercase;
     color: white;
@@ -228,7 +233,7 @@
   }
 
   .introduction {
-    font-size: 14px;
+    font-size: 15px;
     line-height: 1.5;
     opacity: 0.7;
     text-transform: uppercase;
