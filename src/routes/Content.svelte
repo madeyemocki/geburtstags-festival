@@ -1,6 +1,21 @@
 <script>
   import { Confetti } from "svelte-confetti";
   import ToggleConfetti from "./ToggleConfetti.svelte";
+  let showModal = false;
+
+  function handleSubmit(event) {
+    event.preventDefault();
+    const input = document.querySelector("#riddle-input").value;
+    if (input === "Bierbaum") {
+      showModal = true;
+    } else {
+      alert("Incorrect. Try again.");
+    }
+  }
+
+  function closeModal() {
+    showModal = false;
+  }
 </script>
 
 <div class="content">
@@ -79,6 +94,28 @@
     </div>
     <span class="divider"></span>
     <div class="menupoint">
+      <h2>Rätsel</h2>
+      <h3 class="riddle">
+        Ich bin nie dicht, doch alle in mir sind es ständig.<br />Was bin ich?
+      </h3>
+      <form on:submit={handleSubmit}>
+        <input type="text" id="riddle-input" placeholder="Deine Antwort" />
+        <button class="button" type="submit">ich hab's</button>
+      </form>
+
+      {#if showModal}
+        <div class="modal">
+          <div class="modal-content">
+            <span class="close" on:click={closeModal}>&times;</span>
+            <p>Richtig! Hier als Preis in Bild von Hannes</p>
+            <img src="images/hannes.png" alt="Bierbaum" />
+          </div>
+        </div>
+      {/if}
+    </div>
+
+    <span class="divider"></span>
+    <div class="menupoint">
       <h2>Line Up</h2>
       <h3>Freitag, 8.11</h3>
       <p><strong>Ab 16 Uhr:</strong> Einlass</p>
@@ -119,6 +156,17 @@
 </div>
 
 <style>
+  input {
+    padding: 15px;
+    border-radius: 5px;
+    border: none;
+    margin: 20px 0;
+    width: 90%;
+  }
+  .riddle {
+    color: white;
+    line-height: 1.5;
+  }
   .eventdescription {
     line-height: 1.5;
     font-size: 12px;
