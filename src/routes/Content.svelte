@@ -24,7 +24,7 @@
   </div>
 
   <ToggleConfetti>
-    <button class="button" slot="label">Drück mich</button>
+    <button class="button" slot="label">Drück mich!!!</button>
     <div
       style="top: -50px; left: 0; height: 100vh; width: 110vw; justify-content: center;"
     >
@@ -55,9 +55,9 @@
     um ein Wochenende voller Glitzer, Lachen und Magie zu erleben. Dort,
     inmitten von Sauna, Pool und weiten Hallen, haben wir Platz für all unsere
     wilden Träume und Geschichten. Packt eure funkelnden Festivalgewänder, eure
-    mutigsten Tanzschritte und die schönsten Anekdoten über die beiden ein –
-    denn hier feiern wir ein Fest, das selbst den Sternen noch lange in
-    Erinnerung bleiben wird!
+    hellen abriebfesten Hallenturnschuhe!1!11! und die schönsten Anekdoten über
+    die beiden ein – denn hier feiern wir ein Fest, das selbst den Sternen noch
+    lange in Erinnerung bleiben wird!
   </div>
   <div class="menucontent">
     <span class="divider"></span>
@@ -74,7 +74,6 @@
         <br />
         Also, schnappt euch eure funkelnden Gewänder, bringt euren Kampfgeist mit
         und bereitet euch darauf vor, Seite an Seite zu triumphieren und zu feiern.
-        Ein Spektakel für die Ewigkeit.
       </div>
       <h3>Freitag, 8.11</h3>
       <p class="competition">
@@ -97,14 +96,14 @@
       <p class="riddle-text">Was bin ich?</p>
       <form on:submit={handleSubmit}>
         <input type="text" id="riddle-input" placeholder="Deine Antwort" />
-        <button class="button" type="submit">ich hab's</button>
+        <button class="button" type="submit">ich möchte lösen</button>
       </form>
 
       {#if showModal}
         <div class="modal">
           <div class="modal-content">
             <p class="riddle-text">
-              Herzlichen Glückwunsch! Du hast das Rätsel gelöst. Klicke auf play
+              Herzlichen Glückwunsch! Du hast das Rätsel gelöst. Klicke auf Play
               für deinen Preis.
             </p>
             <video width="320" height="240" controls>
