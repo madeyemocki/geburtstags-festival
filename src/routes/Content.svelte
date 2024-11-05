@@ -52,10 +52,10 @@
     Weiten von Lübbenow, das nur darauf wartete, zum Schauplatz eines
     märchenhaften Festes zu werden. Anlässlich des Ehrentages unserer geliebten
     Geburtstagskinder Lene und Hannes versammeln sich Freunde von nah und fern,
-    um ein Wochenende voller Glitzer, Lachen und Magie zu erleben. Dort,
+    um ein Wochenende voller Glitzer, Lachen und Magie zu erleben.<br />Dort,
     inmitten von Sauna, Pool und weiten Hallen, haben wir Platz für all unsere
     wilden Träume und Geschichten. Packt eure funkelnden Festivalgewänder, eure
-    hellen abriebfesten Hallenturnschuhe!1!11! und die schönsten Anekdoten über
+    hellen abriebfesten Hallenturnschuhe !1!11! und die schönsten Anekdoten über
     die beiden ein – denn hier feiern wir ein Fest, das selbst den Sternen noch
     lange in Erinnerung bleiben wird!
   </div>
@@ -72,8 +72,8 @@
         Wissen und Schnelligkeit fordert, oder bei der legendären Reise ins
         Delirium.
         <br />
-        Also, schnappt euch eure funkelnden Gewänder, bringt euren Kampfgeist mit
-        und bereitet euch darauf vor, Seite an Seite zu triumphieren und zu feiern.
+        Bringt euren Kampfgeist mit und bereitet euch darauf vor, Seite an Seite
+        zu triumphieren und zu feiern.
       </div>
       <h3>Freitag, 8.11</h3>
       <p class="competition">
