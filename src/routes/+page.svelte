@@ -76,7 +76,7 @@
 
   .scroll-down {
     position: fixed;
-    bottom: 100px;
+    bottom: 200px;
     left: 50%;
     transform: translateX(-50%);
     font-size: 20px;
