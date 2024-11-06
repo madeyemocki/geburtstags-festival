@@ -14,7 +14,7 @@
       <div class="title">
         <h1>Geburtstagsfestival</h1>
         <h1>8.11 - 11.11</h1>
-        <div class="scroll-down">hier gehts lang v</div>
+        <div class="scroll-down">hier lang</div>
       </div>
     </div>
 
@@ -76,10 +76,10 @@
 
   .scroll-down {
     position: fixed;
-    bottom: 40px;
+    bottom: 100px;
     left: 50%;
     transform: translateX(-50%);
-    font-size: 1.5rem;
+    font-size: 20px;
     color: white;
     text-shadow: 1px 1px 2px black;
     animation: bounce 2s infinite;
