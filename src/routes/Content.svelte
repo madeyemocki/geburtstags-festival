@@ -120,8 +120,11 @@
       <h2>Line Up</h2>
       <h3>Freitag, 8.11</h3>
       <p><strong>Ab 16 Uhr:</strong> Einlass</p>
+      <p class="party" href="#party">
+        <strong>23:00 Uhr:</strong> DJ John Foley
+      </p>
       <h3>Samstag, 9.11</h3>
-      <p class="party" href="#party"><strong>20:00 Uhr:</strong> DJ Paquet</p>
+      <p class="party" href="#party"><strong>20:00 Uhr:</strong> DJ Paqueta</p>
       <p class="party" href="#party"><strong>22:00 Uhr:</strong> DJ Tomasch</p>
       <h3>Sonntag, 10.11</h3>
       <p><strong>Hannes Geburtstag</strong></p>
