@@ -144,6 +144,8 @@
           target="_blank">hmm simsalabim</a
         >
       </p>
+      <br>
+      <h4> Die gewinner der magic hour </h4>
         <div class="gallery">
         <div class="gallery-item"><img src="../images/1.JPG" alt="Description 1"></div>
         <div class="gallery-item"><img src="../images/2.JPG" alt="Description 1"></div>
