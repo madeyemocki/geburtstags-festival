@@ -144,6 +144,25 @@
           target="_blank">hmm simsalabim</a
         >
       </p>
+        <div class="gallery">
+        <div class="gallery-item"><img src="../images/1.JPG" alt="Description 1"></div>
+        <div class="gallery-item"><img src="../images/2.JPG" alt="Description 1"></div>
+        <div class="gallery-item"><img src="../images/3.JPG" alt="Description 1"></div>
+        <div class="gallery-item"><img src="../images/4.JPG" alt="Description 1"></div>
+        <div class="gallery-item"><img src="../images/5.JPG" alt="Description 1"></div>
+              <div class="gallery-item"><img src="../images/6.JPG" alt="Description 1"></div>
+        <div class="gallery-item"><img src="../images/7.JPG" alt="Description 1"></div>
+        <div class="gallery-item"><img src="../images/8.JPG" alt="Description 1"></div>
+        <div class="gallery-item"><img src="../images/9.JPG" alt="Description 1"></div>
+                <div class="gallery-item"><img src="../images/10.JPG" alt="Description 1"></div>                <div class="gallery-item"><img src="../images/11.JPG" alt="Description 1"></div>
+
+                <div class="gallery-item"><img src="../images/12.JPG" alt="Description 1"></div>
+                <div class="gallery-item"><img src="../images/13.JPG" alt="Description 1"></div>
+                <div class="gallery-item"><img src="../images/14.JPG" alt="Description 1"></div>
+
+
+
+    </div>
     </div>
     <span class="divider"></span>
     <div class="menupoint">
@@ -265,4 +284,23 @@
   .menupoint p {
     margin-bottom: 15px;
   }
+    .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 16px;
+            padding: 16px;
+        }
+        .gallery-item {
+            overflow: hidden;
+            border-radius: 8px;
+            transition: transform 0.3s;
+        }
+        .gallery-item img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        .gallery-item:hover {
+            transform: scale(1.05);
+        }
 </style>
